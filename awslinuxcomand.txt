@@ -1,0 +1,80 @@
+*********** login in AWS Managment console ************
+
+select as root 
+
+Username:-cityhallapp@gmail.com
+
+pass:-Mobi@786
+
+
+
+********** remove folder ************
+
+--> rm -r foldername
+
+*************************************
+
+Step-1:- select ec2 instance
+	
+	-> search name like (saksham-app) click on 
+
+Step-2:- instances is open and start the instance state
+
+
+step-3:- click on connect button
+	
+	-> now linux server is open.
+
+
+************************* linux command ************************
+
+1:- write sudo su
+	-> sudo su means give the all access as super user.
+
+
+2:- write cd foldername
+
+	-> write ls (to show all files in folder)
+
+3:- go in react folder
+
+	-> do this confirm  install node.js
+
+	-> do this confirm  install git
+
+	-> do this confirm  install serve (for run the app on server or serve the app on server).
+
+	-> do this confirm  install pm2(when close the server app is not close and process running in 	   background 27*7 time).
+
+4:- copy the git URL for where your code is deploy
+
+	-> in new folder when created by you.
+
+	-> write git clone giturl.
+
+5:- write npm install (install all the packages for require our app).
+
+
+6:- write serve build (run the app).
+
+
+************************** PM2 && Serve Command *********************
+
+
+1:- write serve build (run the your app).
+
+
+2:- write pm2 serve build 3000 --spa (run the app on specific port).
+
+
+3:- write pm2 delete app name (delete or stop PM2 process).
+
+
+4:- write pm2 restart app --name"New name"; (rename the your host app).
+
+
+5:- write pm2 logs (view logs in cli).
+
+
+6:- write pm2 monit (view log in real time).
+

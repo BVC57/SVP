@@ -1,0 +1,410 @@
+.body{
+   box-sizing: border-box;
+   overflow: scroll;
+}
+.mipage{
+    background-color: white;
+}
+.cpage{
+    display: flex;
+    margin-top: 20px;
+}
+.cpage h3{
+    font-size: 17px;
+    margin-top: 40px;
+}
+
+.csd{
+    display: flex;
+    margin-left: 50%;
+    padding: 10px;
+    margin-top: 20px;
+}
+.aci{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.aci img{
+    height: 120px;
+    width: 180px;
+    margin-left: 25px;
+    /* border: 5px solid #cdb1b1; */
+    box-shadow: #929292 0px 2px 4px 0px, #929292 0px 2px 16px 0px;
+}
+.aci img:hover{
+    cursor: pointer;
+}
+.sih{
+    display: flex;
+    justify-content: space-around;
+}
+.sih h3{
+    font-size: 15px;
+    margin-left: -35px;
+    margin-top: -10px;
+}
+.sih h4{
+    font-size: 15px;
+    margin-left: -50px;
+    margin-top: -10px;
+}
+.sih h5{
+    font-size: 15px;
+    margin-left: -20px;
+    margin-top: -10px;
+}
+
+
+
+
+/* ---->>>>>>>> css for progress bar <<<<<<---------- */
+
+  .form-container {
+    width: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+  }
+
+  .form-step {
+    display: none;
+  }
+
+  .form-step.active {
+    display: block;
+  }
+
+  .step-indicator {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .step {
+    width: 50px;
+    height: 50px;
+    background-color: #DDEAFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step.completed {
+    background-color:#0075F3;
+  }
+
+  .step-text {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+  .progress-line {
+    height: 5px;
+    background-color: #ddd;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    display: none;
+    margin-left: 200px;
+    width: 32%;
+  }
+
+  .progress-bar {
+    height: 100%;
+    background-color: #0070fa;
+    animation: fillProgress 0.5s forwards;
+  }
+
+  @keyframes fillProgress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .button.next {
+    background-color: #4caf50;
+    color: #fff;
+  }
+
+  .button.previous {
+    background-color: #aaa;
+    color: #fff;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+
+
+  /* select certificate css code here */
+  
+  
+  button {
+    cursor: pointer;
+  }
+  .alert {
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+      background-color: #4caf50;
+      color: #fff;
+    }
+  
+  #pkey{
+      float: right;
+      color: red;
+      font-size: 20px;
+  }
+  #signature-pad{
+      border: 1px dashed black;
+      height: 150px;
+      width: 250px;
+      margin-top: 10px;
+  }
+  .signhead{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  /* this is for slider images */
+  
+  .slider-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow-x: auto; /* Enable horizontal scrolling for cards */
+    display: block;
+  }
+  
+  .slider {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Adjust spacing between cards */
+  }
+  .slider1 {
+    display: flex;
+    padding: 20px;
+    gap: 20px; /* Adjust spacing between cards */
+  }
+  
+  .card {
+    width: 300px; /* Adjust card width as needed */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .shead{
+      text-align: center;
+      font-size: 50px;
+      margin-top: 30px;
+      background-color: antiquewhite;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover; /* Ensure image covers the entire area */
+    border: 1px solid black;
+  }
+  .card img:hover{
+    cursor: pointer;
+  }
+  
+  .card-text {
+    padding: 15px;
+    border: 1px solid black;
+  }
+  
+  .card-text h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .card-text p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .card-text button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* for radio button style */
+  /* Style the container for radio buttons */
+   .card input[type="radio"] {
+      display: none;
+  }
+  
+  .card input[type="radio"]:checked {
+      color: green;
+  }
+  
+  
+  .card-form {
+      height: 650px;
+      width: 300px;
+      border:1px solid black;
+      border-radius: 10px;
+  }
+  .card-form input{
+      padding: 10px;
+      margin-top: 10px;
+      width: 200px;
+  }
+  .card-form button{
+      height: 40px;
+      width: 100px;
+      background-color: green;
+      border-radius: 30px;
+      margin-top: 30px;
+      border: none;
+  }
+  .card-form label{
+      font-size: 15px;
+      margin-top: 20px;
+  }
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: #cfcfcf;
+    padding: 30px;
+    border-radius: 5px;
+    width: 50%;
+    text-align: center;
+    display: block;
+  }
+  .modal-content button{
+      height: 50px;
+      width: 100px;
+      background-color: green;
+      border-radius: 30px;
+      border: none;
+      font-weight: 800;
+  }
+  
+  #popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  #selected-image {
+    max-width: 100%;
+    max-height: 80vh;
+  }
+  
+  .close-popup {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 250px;
+    font-size: 80px;
+    color: red;
+  }
+  
+  .card-form {
+    display: flex;
+  }
+
+
+  /* registration page css code here */
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+.form_wrap{
+	margin-top: 35px;
+}
+
+.form_wrap .input_wrap{
+	margin-bottom: 15px;
+}
+
+.form_wrap .input_wrap:last-child{
+	margin-bottom: 0;
+}
+
+.form_wrap .input_wrap label{
+    display: block;
+    margin-bottom: 3px;
+    color: #000000;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.form_wrap .input_grp{
+	display: flex;
+	justify-content: space-between;
+}
+
+.form_wrap .input_grp  input[type="text"]{
+	width: 165px;
+}
+
+.form_wrap  input[type="text"]{
+	width: 95%;
+	border-radius: 3px;
+	border: 1px solid #9597a6;
+	padding: 10px;
+	outline: none;
+}
+
+.form_wrap  input[type="text"]:focus{
+	border-color: #ebd0ce;
+}
+
+input#idate {
+    width: 380px;
+    height: 30px;
+}
+form#multi-step-form {
+    margin-top: -25px;
+}

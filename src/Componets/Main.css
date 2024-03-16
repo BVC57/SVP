@@ -1,0 +1,366 @@
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+header {
+  /* Styles for the header section */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-left:5%;
+}
+.css-1afoy26-control{
+  margin: 0 5px;
+}
+.cname {
+  float: left;
+}
+.cname p{
+  font-size: 15px;
+  color: #000000;
+}
+.logoutsection img{
+  margin-left: 40px;
+}
+.logoutsection a{
+  color: #262C4C;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.so{
+  margin-left: 40px;
+  height: 20px;
+}
+
+.icon {
+  font-size: 1.5em;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-align: center;
+}
+
+
+/* Style the dropdown */
+.fdd {
+  padding: 10px;
+  width: 400px;
+  margin-left: 10px;
+  border: 1px solid #d93954;
+  background-color: white; /* Set background color to cover arrow area */
+}
+
+.fdd option {
+  max-height: 50px;
+  padding: 5px;
+  border: 2px solid black;
+}
+/* Style the hover effect on options */
+.fdd option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style the selected option */
+.fdd option:checked {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* Sidebar.css */
+.version {
+  font-size: 10px;
+  text-align: center;
+}
+.sidebar {
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #DDEAFA;
+  padding: 10px;
+}
+.slh{
+  display: block;
+}
+.slh img{
+  height: 50px;
+  width: 50px;
+  margin-left: 45px;
+}
+.slh h1{
+  color: #0075f3;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* .sidebar.open {
+  width: 100px;
+  z-index: 999;
+} */
+
+/* .toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 6px;
+  align-items: center;
+  text-align: center;
+} */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+li {
+  padding: 15px;
+  cursor: pointer;
+}
+li img{
+  height: 20px;
+  width: 20px;
+}
+li p{
+  margin-left: 5px;
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+
+.menu-items {
+  padding-top: 10px;
+}
+/* Add this to your existing CSS or create a new CSS file */
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items a {
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: #262C4C;
+}
+
+.menu-items ul li a.active {
+  background-color:#4070f4; /* Set the background color for the active link */
+}
+
+.sidebar .menu-items  li.active {
+  background-color:#bfd0ff;
+}
+
+.sidebar .menu-items  li.active a {
+  color: #0075F3; /* Change text color to white when active */
+}
+
+
+
+
+
+
+
+/* Sub menu css here */
+
+.sub-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sub-menu li {
+  padding: 15px;
+}
+
+.sub-menu li a {
+  text-decoration: none;
+  color:#262C4C;
+}
+
+
+
+/* css for logout */
+
+/* Logout.css */
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logout-container button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ///////////////////////////////  new css start here //////////////////////////////////////////////////*/
+.lscreen {
+  background-color: #ffffff;
+  align-items: center;
+  text-align: center;
+}
+:where(.container, form, .input-field) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background-color: white;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.lh {
+  display: flex;
+}
+.lh img {
+  height: 50px;
+  width: 50px;
+}
+.lh h1 {
+  color: #0075f3;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
+.container header {
+  height: 65px;
+  width: 65px;
+  /* background: #4070f4; */
+  color: #fff;
+  font-size: 2.5rem;
+  border-radius: 50%;
+}
+.container h4 {
+  font-size: 1.25rem;
+  color: white;
+  font-weight: 500;
+  line-height: 20px;
+}
+.container h5 {
+  font-size: 12px;
+}
+
+form .input-field {
+  flex-direction: row;
+  column-gap: 10px;
+  caret-color: black;
+  margin-top: 10px;
+}
+.input-field input {
+  height: 40px;
+  width: 40px;
+  border-radius: 6px;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #c9c9c9;
+}
+.input-field input:focus {
+  outline: none;
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.vbtn {
+  margin-top: 25px;
+  width: 95%;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 9px 0;
+  border-radius: 6px;
+  background: #4070f4;
+  cursor: pointer;
+}
+.vbtn:hover {
+  background-color: #0030b6;
+}
+
+a.ro {
+  text-decoration: none;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 75%;
+}
+.hl {
+  width: 325px;
+  display: block;
+}
+.hl lable {
+  margin-right: 300px;
+  font-weight: 700;
+}
+.hl input {
+  width: 300px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid black;
+}
+a.sup {
+  text-decoration: none;
+}
+.gotp{
+  background-color: transparent;
+  border:none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0075f3;
+  float: right;
+  margin-top: -27px;
+}
+
+.search {
+  display: inline-block;
+  position: relative;
+}
+
+.search input[type="text"] {
+  width: 300px;
+  padding: 10px;
+}
+
+.search button[type="submit"] {
+  border: none;
+  height: 34px;
+  background: transparent;
+  color:#0075f3;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
+}
+
+
