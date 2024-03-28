@@ -40,10 +40,12 @@ function Progressbar() {
       // Handle final step action here
       // For now, just changing the content
       document.querySelector(".form-container").innerHTML = `
-        <div style="text-align: center;">
-          <h2>Congratulations!</h2>
-          <p>You have successfully logged in.</p>
-        </div>
+      <div class="alert" id="successAlert">
+      <h1>Your Request Is In Minting Proccess</h1>
+      <br />
+      <br />
+      <h3>(Please Check Your Email After a Few Minutes)</h3>
+    </div>
       `;
     }
   };
@@ -53,7 +55,6 @@ function Progressbar() {
       setCurrentStep(currentStep - 1);
       showStep(currentStep - 1);
       document.querySelector(".progress-line").style.display = "block";
-      document.querySelector(".button.next").innerText = "Next";
     }
   };
 
@@ -101,61 +102,58 @@ function Progressbar() {
         <div
           className={`form-step ${currentStep === 2 ? "active" : ""}`}
           id="step-2">
-          <form>
-            <div className="form_wrap">
-              <div className="input_grp">
-                <div className="input_wrap">
-                  <label htmlFor="fname">User Id</label>
-                  <input type="text" id="fname"  placeholder="Enter User ID"/>
+          <form action="#">
+            <div class="user__details">
+              <div className="fdata">
+                <div class="input__box1">
+                  <span class="details">User Id</span>
+                  <input type="text" placeholder="Enter Id" required />
                 </div>
-                <div className="input_wrap">
-                  <label htmlFor="lname">Name</label>
-                  <input type="text" id="lname" placeholder="Enter Your Name" />
+                <div class="input__box2">
+                  <span class="details">Name</span>
+                  <input type="text" placeholder="Enter Name" required />
                 </div>
               </div>
-              <div className="input_wrap">
-                <label htmlFor="email">Email</label>
-                <input type="text" id="email"  placeholder="Enter Your Email"/>
+              <div class="input__box">
+                <span class="details">Email</span>
+                <input type="email" placeholder="Enter Mail" required />
               </div>
-              <div className="input_wrap">
-                <label htmlFor="title">Title</label>
-                <input type="text" id="title"  placeholder="Enter Title Name"/>
+              <div class="input__box">
+                <span class="details">Title</span>
+                <input type="text" placeholder="Enter Title" required />
               </div>
-              <div className="input_wrap">
-                <label htmlFor="title">Select Issue Date</label>
-                <input type="date" id="idate" />
+              <div class="input__box">
+                <span class="details">Select Issue Date</span>
+                <input type="date" required />
               </div>
-              
             </div>
           </form>
-          {/* <div className="button-container">
-            <button
-              type="button"
-              className="button previous"
-              onClick={prevStep}>
+          <div className="button-container">
+            <button type="button" className="cancelbtn" onClick={prevStep}>
               Previous
             </button>
-            <button type="button" className="button next" onClick={nextStep}>
-              Next
+            <button type="button" className="viewbtn" onClick={nextStep}>
+              View Certificate
             </button>
-          </div> */}
+          </div>
         </div>
 
         <div
           className={`form-step ${currentStep === 3 ? "active" : ""}`}
           id="step-3">
           <h2>Step 3</h2>
-          {/* <div className="button-container">
-            <button
-              type="button"
-              className="button previous"
-              onClick={prevStep}>
-              Previous
-            </button>
-            <button type="button" className="button next" onClick={nextStep}>
-              Next
-            </button>
-          </div> */}
+          <div class="modal-overlay" id="popup">
+            <div class="modal-content">
+              <img id="selected-image" src="" alt="" />
+              <br />
+              <button type="button" className="cancelbtn" onClick={prevStep}>
+                Previous
+              </button>
+              <button class="showmes" onClick={nextStep}>
+                Mint NFT
+              </button>
+            </div>
+          </div>
         </div>
       </form>
     </div>

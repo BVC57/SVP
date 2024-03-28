@@ -1,6 +1,5 @@
 .body{
    box-sizing: border-box;
-   overflow: scroll;
 }
 .mipage{
     background-color: white;
@@ -156,13 +155,6 @@
     color: #fff;
   }
 
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
 
 
 
@@ -201,7 +193,6 @@
   .slider-container {
     width: 80%;
     margin: 0 auto;
-    overflow-x: auto; /* Enable horizontal scrolling for cards */
     display: block;
   }
   
@@ -319,16 +310,37 @@
     width: 50%;
     text-align: center;
     display: block;
+    margin-left: 11%;
   }
   .modal-content button{
-      height: 50px;
-      width: 100px;
-      background-color: green;
-      border-radius: 30px;
-      border: none;
-      font-weight: 800;
+    padding: 10px 20px;
+    background-color:white;
+    color:#007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #007bff;
+    transition: background-color 0.3s ease;
+    margin-right: 50px;
+  }
+  .search__container {
+    position: relative;
   }
   
+  .search__icon {
+    position: absolute;
+    top: 47%;
+    left: 65%;
+    transform: translateY(-50%);
+    color:#aaa;
+  }
+  
+  .search__input {
+    padding-left: 30px; /* Adjust the padding to accommodate the icon */
+    /* Add other styles as needed */
+  }
+  
+
   #popup {
     display: flex;
     justify-content: center;
@@ -341,70 +353,153 @@
     max-height: 80vh;
   }
   
-  .close-popup {
-    cursor: pointer;
-    position: absolute;
-    top: 10px;
-    right: 250px;
-    font-size: 80px;
-    color: red;
-  }
   
-  .card-form {
-    display: flex;
+  
+
+
+/* registration form details is here */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+/* container and form */
+.container {
+  max-width: 700px;
+  width: 100%;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+}
+.fdata{
+  display: flex;
+}
+.container form .user__details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0 12px 0;
+}
+/* inside the form user details */
+form .user__details .input__box {
+  width: calc(100% / 2 - 20px);
+  margin-bottom: 15px;
+}
+
+.user__details .input__box .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.user__details .input__box1 .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+.user__details .input__box2 .details {
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+  margin-left: 33px;
+}
+.user__details .input__box input {
+  height: 35px;
+  width: 150%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid gray;
+}
+.user__details .input__box1 input{
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid gray;
+}
+.user__details .input__box2 input{
+  height: 35px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 16px;
+  border: 1px solid gray;
+  margin-left: 33px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cancelbtn{
+  padding: 10px 20px;
+  background-color:white;
+  color:#007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s ease;
+}
+.viewbtn {
+  margin-right: 27%;
+  padding: 10px 20px;
+  background-color: white;
+  color:#007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  transition: background-color 0.3s ease;
+}
+
+
+
+
+
+@media only screen and (max-width: 584px) {
+  .container {
+    max-width: 100%;
+  }
+
+  form .user__details .input__box {
+    margin-bottom: 15px;
+    width: 100%;
   }
 
 
-  /* registration page css code here */
+  .container form .user__details {
+    max-height: 300px;
+    overflow-y: scroll;
+  }
 
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
-
-
-.form_wrap{
-	margin-top: 35px;
+  .user__details::-webkit-scrollbar {
+    width: 0;
+  }
 }
 
-.form_wrap .input_wrap{
-	margin-bottom: 15px;
+
+#multi-step-form {
+  margin-top: -25px;
+  height: auto;
+  width: 700px;
+  margin-left: 18%;
+  margin-top: 1px;
 }
 
-.form_wrap .input_wrap:last-child{
-	margin-bottom: 0;
-}
 
-.form_wrap .input_wrap label{
-    display: block;
-    margin-bottom: 3px;
-    color: #000000;
-    font-size: 15px;
-    font-weight: 500;
-}
 
-.form_wrap .input_grp{
-	display: flex;
-	justify-content: space-between;
-}
+/* css code for signaturepad */
 
-.form_wrap .input_grp  input[type="text"]{
-	width: 165px;
+#signature-pad{
+  border: 1px dashed black;
+  height: 150px;
+  width: 250px;
+  margin-top: 10px;
 }
-
-.form_wrap  input[type="text"]{
-	width: 95%;
-	border-radius: 3px;
-	border: 1px solid #9597a6;
-	padding: 10px;
-	outline: none;
-}
-
-.form_wrap  input[type="text"]:focus{
-	border-color: #ebd0ce;
-}
-
-input#idate {
-    width: 380px;
-    height: 30px;
-}
-form#multi-step-form {
-    margin-top: -25px;
+.signhead{
+margin-top: 20px;
+font-size: 20px;
+font-weight: bold;
 }

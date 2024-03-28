@@ -1,0 +1,247 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
+/* Base styling */
+.tablemain{
+    margin-top: 20px;
+}
+input.search__input {
+    width: 50%;
+    margin-left: 357px;
+    margin-top: 10px;
+    height: 25px;
+}
+
+.tophead{
+    display: flex;
+    width: 100%;
+}
+.tophead h3{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.tophead button{
+    height: 35px;
+    width: 200px;
+    font-size: 17px;
+    color: white;
+    background-color: #0075F3;
+    border-radius: 5px;
+    margin: 10px 80px 0;
+    border: none;
+}
+
+table {
+  width: 98%;
+  margin-left: 8px;
+  border-collapse: collapse;
+}
+tbody {
+  padding: 10px;
+}
+thead {
+  background-color: #d0d5dd;
+  height: 40px;
+}
+.data-entry-table {
+  width: 100%;
+}
+
+.data-entry-table th,
+.data-entry-table td {
+  border:  1px solid;
+  padding: 10px;
+  min-width: 200px;
+  background:#C7E3E1 ;
+  box-sizing: border-box;
+  text-align: left;
+}
+tbody{
+  overflow: scroll;
+  height: 200px;
+}
+.data-entry-table tbody tr {
+  background-color: #0062ff; /* Set background color for even rows */
+}
+
+.data-entry-table tbody tr:hover {
+  background-color: #b3b5b8; /* Set background color on hover */
+}
+
+
+/* css code for popup box */
+
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Background overlay with opacity */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-container {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    margin-top: 1%;
+  }
+  
+  .popup-inner {
+    max-width: 400px;
+  }
+  
+  .popup-close {
+    margin-top: 10px;
+  }
+  :where(form, .input-field) {
+    display: block;
+  }
+  form .input-field {
+    flex-direction: row;
+    column-gap: 10px;
+    caret-color: black;
+    margin-top: 10px;
+  }
+  .form_wrap .input_grp {
+    display: block;
+}
+  .input-field input {
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 1px solid #c9c9c9;
+  }
+  .input-field input:focus {
+    outline: none;
+  }
+  .input-field input::-webkit-inner-spin-button,
+  .input-field input::-webkit-outer-spin-button {
+    display: none;
+  }
+
+  .verification-page h1{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .phone-input {
+    position: relative;
+    display: flex;
+  }
+  
+  .country-code {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    padding: 8px;
+    width: 100px;
+    height: 37px;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    border-color: #ccc;
+  }
+  
+  .gotp{
+    height: 39px;
+    width: 100px;
+    border: none;
+    background-color:#0075F3;
+    margin-top: -10%;
+    border-radius: 5px;
+    color: white;
+  }
+  .votp{
+    height: 39px;
+    width: 100px;
+    border: none;
+    background-color:#0075F3;
+    margin-top: 10%;
+    border-radius: 5px;
+    color: white;
+    margin-left: 6%;
+  }
+
+  a.rotp {
+    color: blue;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.slist{
+  margin-top: 20px;
+}
+.slist label{
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+  .phone-input input {
+    margin-left: 97px;
+    margin-top: -1px;
+    border-left: none;
+    transition: border-color 0.3s ease; /* Add transition for smooth effect */
+    height: 33px;
+    width: 172px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .phone-input input:focus {
+    outline: none; /* Remove default focus outline */
+    border-color: #ccc; /* Change border color to black when focused */
+  }
+
+  .button-section{
+    margin-top: 20px;
+  }
+  .button-section button{
+    margin-left: 10px;
+  }
+  .cbtn{
+    height: 40px;
+    width: 180px;
+    background-color:white;
+    margin-top:2%;
+    border: 1px solid #0075F3;
+    border-radius: 5px;
+    color:#0075F3;
+  }
+  .sbtn{
+    height: 40px;
+    width: 180px;
+    background-color:#0075F3;
+    margin-top:2%;
+    border-radius: 5px;
+    color:white;
+    border: none;
+  }
+
+
+/* this is for the select option css */
+.css-wq631q-control {
+  min-height: 50px !important;
+}
+/* div#react-select-3-placeholder {
+    margin-top: -15px;
+}
+svg.css-tj5bde-Svg{
+  margin-top: -15px;
+}
+.css-1dimb5e-singleValue{
+  margin-top: -15px;
+} */
+  
+  
+ 
+  

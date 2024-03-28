@@ -1,31 +1,255 @@
-
-/* Import Google font - Poppins */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
 body {
   min-height: 100vh;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+header {
+  /* Styles for the header section */
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  caret-color: transparent;
-  background-color:lightgray;
+  padding: 10px;
+  margin-left:5%;
+}
+.css-1afoy26-control{
+  margin: 0 5px;
+}
+.cname {
+  float: left;
+}
+.cname p{
+  font-size: 15px;
+  color: #000000;
+}
+.logoutsection img{
+  margin-left: 40px;
+}
+.logoutsection a{
+  color: #262C4C;
+  font-size: 18px;
+  margin-left: 10px;
+}
+.so{
+  margin-left: 40px;
+  height: 20px;
+}
+
+.icon {
+  font-size: 1.5em;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-align: center;
 }
 
 
-:where(.container, form, .input-field, header) {
+/* Style the dropdown */
+.fdd {
+  padding: 10px;
+  width: 400px;
+  margin-left: 10px;
+  border: 1px solid #d93954;
+  background-color: white; /* Set background color to cover arrow area */
+}
+
+.fdd option {
+  max-height: 50px;
+  padding: 5px;
+  border: 2px solid black;
+}
+/* Style the hover effect on options */
+.fdd option:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style the selected option */
+.fdd option:checked {
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+select:focus {
+  outline: none;
+}
+
+/* Sidebar.css */
+.version {
+  font-size: 10px;
+  text-align: center;
+}
+.sidebar {
+  width: 150px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #DDEAFA;
+  padding: 10px;
+}
+.slh{
+  display: block;
+}
+.slh img{
+  height: 50px;
+  width: 50px;
+  margin-left: 45px;
+}
+.slh h1{
+  color: #0075f3;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* .sidebar.open {
+  width: 100px;
+  z-index: 999;
+} */
+
+/* .toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px;
+  margin-left: 6px;
+  align-items: center;
+  text-align: center;
+} */
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+li {
+  padding: 15px;
+  cursor: pointer;
+}
+li img{
+  height: 20px;
+  width: 20px;
+}
+li p{
+  margin-left: 5px;
+  margin-top: 0px;
+  font-size: 12px;
+}
+
+
+.menu-items {
+  padding-top: 10px;
+}
+/* Add this to your existing CSS or create a new CSS file */
+
+.menu-items ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-items a {
+  display: flex;
+  text-decoration: none;
+  font-weight: bold;
+  color: #262C4C;
+}
+
+.menu-items ul li a.active {
+  background-color:#4070f4; /* Set the background color for the active link */
+}
+
+.sidebar .menu-items  li.active {
+  background-color:#bfd0ff;
+}
+
+.sidebar .menu-items  li.active a {
+  color: #0075F3; /* Change text color to white when active */
+}
+
+
+
+
+
+
+
+/* Sub menu css here */
+
+.sub-menu {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sub-menu li {
+  padding: 15px;
+}
+
+.sub-menu li a {
+  text-decoration: none;
+  color:#262C4C;
+}
+
+
+
+/* css for logout */
+
+/* Logout.css */
+.logout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.logout-container button {
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* ///////////////////////////////  new css start here //////////////////////////////////////////////////*/
+.lscreen {
+  background-color: #ffffff;
+  align-items: center;
+  text-align: center;
+}
+:where(.container, form, .input-field) {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.container {
+  background-color: white;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  width: 350px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-left: 35%;
+  margin-top: 10%;
+}
 
-
+.lh {
+  display: flex;
+}
+.lh img {
+  height: 50px;
+  width: 50px;
+}
+.lh h1 {
+  color: #0075f3;
+  font-size: 25px;
+  text-align: center;
+  align-items: center;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Helvetica;
+}
 .container header {
   height: 65px;
   width: 65px;
@@ -36,10 +260,14 @@ body {
 }
 .container h4 {
   font-size: 1.25rem;
-  color:white;
+  color: white;
   font-weight: 500;
   line-height: 20px;
 }
+.container h5 {
+  font-size: 12px;
+}
+
 form .input-field {
   flex-direction: row;
   column-gap: 10px;
@@ -47,12 +275,12 @@ form .input-field {
   margin-top: 10px;
 }
 .input-field input {
-  height: 45px;
-  width: 65px;
+  height: 40px;
+  width: 40px;
   border-radius: 6px;
   font-size: 1.125rem;
   text-align: center;
-  border: 1px solid #C9C9C9;
+  border: 1px solid #c9c9c9;
 }
 .input-field input:focus {
   outline: none;
@@ -62,10 +290,9 @@ form .input-field {
   display: none;
 }
 
-
 .vbtn {
   margin-top: 25px;
-  width: 80%;
+  width: 95%;
   color: #fff;
   font-size: 1rem;
   border: none;
@@ -74,955 +301,66 @@ form .input-field {
   background: #4070f4;
   cursor: pointer;
 }
-.vbtn:hover{
+.vbtn:hover {
   background-color: #0030b6;
 }
 
-a.ro{
+a.ro {
   text-decoration: none;
-  font-size: 18px;
-  color: #0075F3;
+  font-size: 13px;
+  color: #000000;
   font-weight: 500;
   margin-top: 10px;
+  margin-left: 75%;
 }
-
-
-
-
-/* css for info page */
-
-.main{
-    margin:20px;
-    padding: 10px;
-    height: auto;
-    width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 35px;
-}
-.aphead{
-    margin: 10px;
-    text-align: center;
-    font-size: 15px;
-    font-weight: lighter;
-    color: #4070f4;
-}
-.aphead h2{
-    text-align: center;
-    font-size: 20px;
-    font-weight: bolder;
-    color: #0059ff;
-}
-
-.personal-info h2{
-  text-align: center;
-}
-section{
-  border: 1px solid #000000;
-  font-size: 15px;
-  background: #19254B;
-  justify-content: space-evenly;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  padding: 20px;
-  height: 350px;
-  background-image: url('../Images/Mask\ group.png');
-  background-size: auto; /* Adjusts the background image size to cover the entire body */
-  background-position: right; /* Centers the background image */
-  background-repeat:repeat-y; /* Prevents the background image from repeating */
-}
-.profileimg{
-  margin-top: 20px;
-}
-section h2{
-  text-align: center;
-}
-section label{
-  line-height: 30px;
-  display: block;
-  line-height: 40px;
-  color: white;
-}
-.pi{
-  margin-left: 10px;
-  display: flex;
-}
-.dd{
-  display: flex;
-  margin-left: 15px;
-}
-.dd p{
-  line-height: 40px;
-  color: white;
-  font-size: 25px;
-  margin-left: -5px;
-}
-.dd span{
-  font-size: 18px;
-  padding-right: 10px;
-  color: white;
-  margin-top: 7px;
-}
-
-/* card detail css here */
-.card {
-  padding: 20px;
-  margin-bottom: 20px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-
-}
-.cardinfo{
-    width: 300px;
-    line-height: 30px;
-    margin-top: 10px;
-}
-.cardinfo h1{
-  font-size: 20px;
-  color:black;
-}
-.cardinfo label{
-  color:#99a2b4;
-  font-size: 18px;
-}
-.carddata{
-  display: flex;
-}
-
-.image-container {
-  max-width: 100%;
-  height: auto;
-  flex: 1;
-  padding: 10px;
-}
-.image-container1 {
-  max-width: 100%;
-  height: auto;
-  flex: 1;
-  padding: 10px;
-  margin-left: 145px;
-  margin-top: -20px;
-}
-
-.image-container img {
-  width: 350px;
-  height: 250px;
-  border-radius: 5px;
-}
-.image-container1 img {
-  width: 340px;
-  height: 250px;
-  border-radius: 5px;
-}
-
-.image-container h1{
-  font-size: 15px;
-  text-align: center;
-  margin-top: -30px;
-  margin-bottom: 10px;
-}
-.image-container1 h1{
-  font-size: 15px;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.verification-link {
-  margin-top: 10px;
-}
-
-.degreecard h2{
-  text-align: center;
-}
-
-.ehistory h2{
-  text-align: center;
-}
-.extraquilificatin h2{
-  text-align: center;
-}
-.digitalsign h2{
-  text-align: center;
-  font-size: 15px;
-}
-.privacy h2{
-  text-align: center;
-}
-.privacy p{
-  text-align: center;
-  text-transform: uppercase;
-}
-
-#loading-message h1{
-  padding: 15px;
-  background-color: white;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 20px;
-}
-#error-message h1{
-  padding: 15px;
-  background-color: white;
-  border-radius: 10px;
-  text-align: center;
-  font-size: 20px;
-  color: red;
-}
-
-/* Add this to your CSS file or in a style tag within your HTML */
-.loader {
-  color: #00703c;
-  font-size: 25px;
-  text-indent: -9999em;
-  overflow: hidden;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  position: relative;
-  transform: translateZ(0);
-  margin-left: 10px;
-  margin-top: 10px;
-  animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
-}
-.loader1 {
-  color: white;
-  font-size: 80px;
-  text-indent: -9999em;
-  overflow: hidden;
-  width: 1em;
-  height: 1em;
-  border-radius: 50%;
-  position: relative;
-  transform: translateZ(0);
-  animation: mltShdSpin 1.8s infinite ease, round 1.8s infinite ease;
-}
-
-.ab{
-  background-color: white;
-  border-radius: 10px;
-  padding: 1px;
-}
-
-
-
-@keyframes mltShdSpin {
-  0% {
-    box-shadow: 0 -0.83em 0 -0.4em,
-    0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
-    0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-  5%,
-  95% {
-    box-shadow: 0 -0.83em 0 -0.4em, 
-    0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em, 
-    0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-  10%,
-  59% {
-    box-shadow: 0 -0.83em 0 -0.4em, 
-    -0.087em -0.825em 0 -0.42em, -0.173em -0.812em 0 -0.44em, 
-    -0.256em -0.789em 0 -0.46em, -0.297em -0.775em 0 -0.477em;
-  }
-  20% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.338em -0.758em 0 -0.42em,
-     -0.555em -0.617em 0 -0.44em, -0.671em -0.488em 0 -0.46em, 
-     -0.749em -0.34em 0 -0.477em;
-  }
-  38% {
-    box-shadow: 0 -0.83em 0 -0.4em, -0.377em -0.74em 0 -0.42em,
-     -0.645em -0.522em 0 -0.44em, -0.775em -0.297em 0 -0.46em, 
-     -0.82em -0.09em 0 -0.477em;
-  }
-  100% {
-    box-shadow: 0 -0.83em 0 -0.4em, 0 -0.83em 0 -0.42em, 
-    0 -0.83em 0 -0.44em, 0 -0.83em 0 -0.46em, 0 -0.83em 0 -0.477em;
-  }
-}
-
-@keyframes round {
-  0% { transform: rotate(0deg) }
-  100% { transform: rotate(360deg) }
-}
- 
-/* send otp file css code here */
-
-
-
-.container header {
-    height: 65px;
-    width: 65px;
-    background: #4070f4;
-    color: #fff;
-    font-size: 2.5rem;
-    border-radius: 50%;
-}
-.container h4 {
-    font-size: 26px;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    font-weight: 500;
-    padding-bottom: 15px;
-}
-.sbtn {
-    /* margin-top: 25px; */
-    width: 328px;
-    height: 46px;
-    color: #fff;
-    font-size: 1rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 8px;
-    background:#0059ff;
-}
-
-.sbtn:hover{
-  background-color: #003821;
-}
-
-.upbyadhar {
-  display: flex;
-    flex-direction: column;
-    height: auto;
-    padding: 5px;
-    margin-top: -45px;
-    float: right;
-}
-
-.upbyadhar p {
-  color: #667085;
-  display: block;
-  font-size: 12px;
-  text-align: end;
-}
-
-.update p{
-  color: #667085;
-  display: block;
-  font-size: 12px;
-  text-align: end;
-  margin-top: -30px;
-}
-
-
-/* new css add here */
-
-.MainCard{
-  display: block;
-  border-radius: 10px;
-  margin-top: 20px;
-  width: 190%;
-  margin: 20px;
-}
-.mcard{
-  display: block;
-  margin: -2px;
-  background-color: white;
-  margin-top: 40px;
-  border-radius: 5px;
-  padding: 1px;
-}
-
-h1.eh{
-  font-size: 25px;
-  margin-bottom: -20px;
-  color: white;
-}
-
-.apd{
-  width: 50%;
-}
-.apd h2{
-  color: white;
-  margin-left: 22px;
-}
-.od{
-  width: 50%;
-}
-.od h2{
-  color: white;
-}
-.creddata {
-  background-color: #0059ff;
-  border-radius: 10px;
-  padding: 5px;
-}
-
-
-.lnb{
-  padding: 5px;
-  display: flex;
-  height: 40px;
-  width: 300px;
-
-}
-
-/* privacy text  */
-.ph{
-  text-align: center;
-}
-.pd{
-    color: red;
-    text-align: center;
-    line-height: 2;
-}
-i.fas.fa-download {
-    font-size: 30px;
-    float: right;
-    padding: 10px;
-    color: #dcdcdc;
-    margin-left: -50px;
-    margin-right: -80px;
-    margin-top: -40px;
-}
-i.fas.fa-download:hover{
-  cursor: pointer;
-}
-
-/*   css for hr line in eduction detail    */
-hr{
-  width: 100%;
-  margin: 1% 0px 1% 0;
-  background-color: black;
-  height: 2px;
-  border: none;
-}
-
-/* responsive desing for all devices code here */
-/* General styles for smaller screens */
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 300px !important;
-    height: 250px !important;
-    padding: 5px ; /* Important to override previous styles */
-    margin: 20px ; /* Important to override previous styles */
-  }
-  .container header {
-    height: 40px !important; /* Important to override previous styles */
-    width: 40px !important; /* Important to override previous styles */
-    font-size: 2rem !important; /* Important to override previous styles */
-  }
-  .container h4 {
-    font-size: 10px !important; /* Important to override previous styles */
-  }
-  button {
-    margin-top: 20px !important; /* Important to override previous styles */
-    font-size: 0.9rem !important; /* Important to override previous styles */
-  }
-  .loader{
-    margin-left: 10px;
-  }
-  .profileimg img{
-    border-radius: 100% !important;
-  }
-}
-
-
-/* Responsive styles for Galaxy Fold */
-@media screen and (max-width: 300px) and (max-height: 653px) {
-  .main {
-    width: 250px !important;
-    align-items: center !important;
-    text-align: center !important;
-    margin: 20px !important;
-  }
-  .container {
-    padding: 10px !important;
-    width: 260px !important;
-    height: 400px !important;
-  }
-  form .input-field {
-    flex-direction: row;
-    column-gap: 0px;
-    caret-color: black;
-  }
-  .container header {
-    height: 50px;
-    width: 50px;
-    font-size: 1.5rem;
-  }
-  .container h4 {
-    font-size: 10px;
-  }
-
-  .mcard {
-    margin-top: 10px;
-  }
-
-  .card {
-    flex-direction: column;
-    width: 200px;
-  }
-  .creddata{
-    width: 260px !important;
-  }
-
-  .cardinfo,
-  .image-container {
-    flex: none;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-
-  .image-container img {
-    width: 180px !important;
-    height: 200px !important;
-    margin-left: -110px;
-}
-
-  .pi,
-  .dd {
-    font-size: 10px;
-  }
-
-  .aphead h2,
-  .aphead h1 {
-    font-size: 15px;
-    align-items: center;
-    text-align: center;
-  }
-
-  .upbyadhar p {
-    display: block;
-    font-size: 10px;
-    padding-bottom: 5px;
-  }
-  .loader{
-    margin-left: 10px;
-  }
-  .profileimg img{
-    border-radius: 100% !important;
-  }
-  .creddata{
-    width: 250px !important;
-  }
-}
-
-
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  .main{
-    width: 350px;
-    align-items: center;
-    margin: 20px;
-    padding: 5px;
-  }
-  .mcard{
-    margin-top: 10px;
-  }
-  .card {
-    flex-direction: column;
-  }
-  .card h2{
-    text-align: center;
-  }
-
-  .cardinfo,
-  .image-container {
-    flex: none;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-  }
-  .image-container img{
-    width: 290px;
-    height: 200px;
-    margin-left: -15px;
-  }
-
-  .image-container1 {
-    flex: none;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    margin-left: -17px;
-  }
-  .image-container1 img{
-    width: 290px;
-    height: 200px;
-  }
-  .apddata h5{
-    width: 200px;
-  }
-  
-  .cardinfo h2{
-    font-size: 25px;
-    color: black;
-    margin: 0;
-  }
-  .pi ,.dd{
-    font-size: 10px;
-  }
-  .aphead h2, h1{
-    font-size: 15px;
-    align-items: center;
-    text-align: center;
-  }
-  .image-container h1{
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .upbyadhar p {
-    display: block;
-    font-size: 7px;
-    padding-bottom: 5px;
-  }
-  .container {
-    width: 340px !important;
-    height: 440px !important;
-    margin-left: 20px;
-  }
-  .container header {
-    height: 50px;
-    width: 50px;
-    font-size: 2rem;
-  }
-  .container h4 {
-    font-size: 14px;
-  }
-  button {
-    margin-top: 20px;
-    font-size: 0.9rem;
-  }
-  .loader{
-    margin-left: 10px;
-  }
-  #error-message h1{
-    font-size: 10px;
-  }
-  .profileimg img{
-    border-radius: 100% I !important;
-  }
-  i.fas.fa-download {
-    margin-right: 20px;
-    font-size: 30px;
-    float: right;
-    padding: 10px;
-    color:#0059ff;
-    margin-top: -10px;
-    margin-right: -5px;
-}
-.input-field input{
-  width: 45px !important;
-}
-.rimg img{
-  display: none;
-}
-.limg img{
-  display: none;
-}
-section{
-  height: 400px !important;
-  width: 335px !important;
-}
-.carddata{
+.hl {
+  width: 325px;
   display: block;
 }
-.creddata{
-  width: 340px !important;
-}
-.ab{
-  padding: 0;
-}
-.MainCard{
-  margin: 6px !important;
-}
-p.at{
-  margin: 5px !important;
-  background-color: #99a2b4 !important;
-}
-.apddata{
-  font-size: 12px;
-  text-align: start;
-
-}
-.personal-info h1{
-  font-size: 25px;
-}
-.aadhar-dob{
-  display: block !important;
-}
-.aadhar-gender{
-  display: block !important;
-}
-.upbyadhar{
-  margin-top: -52px;
-}
-.pid {
-  margin-left: -15px;
-  margin-top: -20px;
-}
-.profileimg img{
-  height: 100px;
-  width: 100px;
-}
-.profileimg span img{
-  margin-left: 30px !important;
-  margin-top: -40px;
-}
-.dd{
-  display: block;
-}
-.dd span{
-  display: none;
-}
-.score{
-  height: 130px;
-  width: 100px !important;
-  margin-left: 5px;
-}
-.score p{
-  font-size: 15px;
-}
-.tsi{
-  font-size: 9px;
-  margin-left: 2px !important;
-}
-.tsi img{
-  margin-top: -20px !important;
-}
-h1.eh{
-  margin: 0 59px 0 5px;
-}
-.footer p{
-  text-align: center;
-}
-
-}
-
-
-
-
-
-
-
-/*########################## the new page css start here  ############################*/
-
-.ps{
-  display: block;
-  margin-top: 40px;
-}
-
-
-.personal-info h1{
-  text-align: center;
-  color: white;
-  font-size: 25px;
-}
-h1.sh{
-  text-align: center;
-  color:#0059ff;
-  font-size: 30px;
-}
-
-p#full-name-label {
-  font-size: 25px;
-  color: white;
-}
-
-.profileimg img{
-  height: 120px;
-  width: 120px;
-  border-radius: 50%;
-}
-.profileimg span img{
-  height: 60px;
-  width: 60px;
-  margin-left: -40px;
-}
-
-.tscore p{
-  height: 70px;
-  width: 70px;
-  border: 5px solid white;
-  border-radius: 50%;
-  text-align: center;
-  padding: 17px;
-  margin-top: 50px;
-  margin-left: 5px;
-}
-
-.apdlable,
-.apddata {
-  flex: 0.5; /* To make both elements take equal space */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align items to start (left) */
-  width: 150%;
-}
-.apdlable p{
-  font-size: 20px;
-  line-height: 2.5;
-}
-
-.apddata label{
-  font-size: 16px;
-  line-height: 2;
-}
-
-
-h4.AH{
-    margin: 10px;
-}
-
-p.isv {
-    width: fit-content !important;
-    float: right;
-    margin: 10px;
-    font-family: 'Heebo', sans-serif;
-    font-size: 0.75rem;
-    font-weight: 700;
-    letter-spacing: 0.025rem;
-    font-style: normal;
-    color: white;
-    background-color: #FFFFFF;
-    border-radius: 1.25rem;
-    padding: 0.35rem 0.75rem;
-    background-color: darkgray;
-}
-p.at {
-  width: fit-content !important;
-  float: left;
-  margin: 10px;
-  font-family: 'Heebo', sans-serif;
-  font-size: 0.75rem;
+.hl lable {
+  margin-right: 300px;
   font-weight: 700;
-  letter-spacing: 0.025rem;
-  font-style: normal;
-  color:#0059ff;
-  background-color: #FFFFFF;
-  border-radius: 2px;
-  padding: 0.35rem 0.75rem;
-  margin-top: -20px;
-  margin-left: -1px;
+}
+.hl input {
+  width: 300px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid black;
+}
+a.sup {
+  text-decoration: none;
+}
+.gotp{
+  background-color: transparent;
+  border:none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0075f3;
+  float: right;
+  margin-top: -27px;
 }
 
-.score{
-  width: 200px;
-  align-items: center;
-  text-align: center;
-  background-color: #0B132F;
-  border-radius: 20px;
+.search {
+  display: inline-block;
+  position: relative;
 }
-.tsi{
-  display: flex;
-  text-align: center;
-  margin-left: 35px;
+
+.search input[type="text"] {
+  width: 300px;
+  padding: 10px;
 }
-.score p{
-  color: white;
-  margin-top: -30px;
-  margin-left: 10px;
-  font-weight: 500;
-  margin-bottom: 25px;
-}
-.tsi img{
-  height: 20px;
-  width: 20px;
-  margin-top: -28px;
-  margin-left: 10px;
-}
-.aadhar-dob{
-  display: flex;
-}
-.aadhar-dob label{
-  margin-left: 10px;
-}
-.aadhar-gender{
-  display: flex;
-}
-.aadhar-gender label{
-  margin-left: 10px;
+
+.search button[type="submit"] {
+  border: none;
+  height: 34px;
+  background: transparent;
+  color:#0075f3;
+  cursor: pointer;
+  padding: 10px 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 15px;
 }
 
 
-
-/*////////////////////////////  NEW VERIFY CSS ////////////////////////////////////////////*/
-
-.container{
-    background-color: white;
-    padding: 20px;
-    align-items: center;
-    text-align: center;
-    width: 550px;
-    border-radius: 25px;
-}
-.lh{
-  display: flex;
-}
-.lh img{
-  height: 70px;
-  width: 70px;
-}
-.lh h1{
-    color: #0075F3;
-    font-size: 40px;
-    text-align: center;
-    align-items: center;
-    margin: 10px;
-    font-weight: bold;
-    font-family: Helvetica;
-}
-
-.hl h3{
-  margin-top: 25px;
-}
-.hl p{
-  font-size: 10px;
-  padding: 5px;
-  color: #667085;
-  margin-top: 10px;
-  word-break: break-all;
-  word-spacing: 6px;
-}
-
-.limg img{
-    margin-top: -300px;
-}
-
-.rimg img{
-  margin-top: 100px;
-}
-
-
-/* css for new profile header */
-
-span{
-  margin-left: 5px;
-  margin-top: 3px;
-}
-
-.pid{
-  display: flex;
-  justify-content: space-between;
-}
-.scoresection{
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-.footer{
-  text-align: justify;
-  width: auto;
-  padding: 15px;
-  color: gray;
-  font-size: 12px;
-}
-
-.footer h2{
-  color: black;
-  text-align: center;
-}
-h6.fh{
-  font-size: 20px;
-  text-align: center;
-  border: 2px solid black;
-  margin-top: 20px;
-}
-h6.fh span{
-  color:#0075F3;
-}
